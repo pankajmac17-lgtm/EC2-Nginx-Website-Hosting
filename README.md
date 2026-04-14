@@ -27,7 +27,50 @@ User Browser → Public IP → EC2 Instance → Nginx → HTML Website
 
 ### 2. Installed Nginx
 
-```bash
+'''bash
 sudo yum install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
+sudosystemctl status nginx
+
+### 3. Verified Nginx Status
+
+sudo systemctl status nginx
+
+### 4. Navigated to Nginx HTML Directory
+
+cd /usr/share/nginx/html
+ls
+
+### 5. Edited index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My AWS Website</title>
+</head>
+<body>
+    <h1>Welcome to My AWS EC2 Website</h1>
+    <p>This website is hosted on Amazon EC2 using Nginx.</p>
+    <p>Created by Pankaj Jangid</p>
+</body>
+</html>
+
+### 6. Restarted Nginx
+sudo systemctl restart nginx
+
+### 7. Accessed Website
+
+Opened the public IP in browser and verified the website was accessible.
+
+## Commands Used
+sudo yum install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl status nginx
+cd /usr/share/nginx/html
+sudo nano index.html
+sudo systemctl restart nginx
+
+
+

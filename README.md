@@ -27,7 +27,7 @@ User Browser → Public IP → EC2 Instance → Nginx → HTML Website
 
 ### 2. Installed Nginx
 
-<!--bash
+bash
 sudo yum install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
@@ -43,7 +43,7 @@ cd /usr/share/nginx/html
 ls
 
 ### 5. Edited index.html
-<!--
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,7 +55,6 @@ ls
     <p>Created by Pankaj Jangid</p>
 </body>
 </html>
--->
 
 ### 6. Restarted Nginx
 sudo systemctl restart nginx
